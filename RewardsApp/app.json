@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "168-group",
-    "slug": "168-group",
+    "name": "RewardsApp",
+    "slug": "RewardsApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
