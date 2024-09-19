@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, ScrollView, FlatList } from 'react-native';
 import { Link } from 'expo-router';
-import { Colors } from '../../constants/colors';
+import { Colors } from '../../constants/Colors';
 
 const dummyRewards = [
   { id: '1', name: 'Free Coffee', description: 'Get a free coffee', pointsCost: 100 },
