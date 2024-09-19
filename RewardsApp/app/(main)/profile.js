@@ -1,19 +1,20 @@
 import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
-import { ProfileInfo } from '../../components/profile/ProfileInfo';
-import { PointsHistory } from '../../components/profile/PointsHistory';
-import { useAuth } from '../../hooks/useAuth';
-import { COLORS } from '../../constants/colors';
 
 export default function ProfileScreen() {
-  const { user } = useAuth();
+  const user = {
+    full_name: 'John Doe',
+    email: 'john.doe@example.com',
+    points: 500
+  };
 
   return (
-    <ScrollView className="flex-1 bg-primary">
-      <View className="p-4">
-        <Text className="text-2xl font-bold text-secondary mb-4">Your Profile</Text>
-        <ProfileInfo user={user} />
-        <PointsHistory />
+    <ScrollView style={{ flex: 1, padding: 20 }}>
+      <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 20 }}>Your Profile</Text>
+      <View style={{ backgroundColor: 'white', padding: 20, borderRadius: 10 }}>
+        <Text style={{ fontSize: 18, marginBottom: 10 }}>Name: {user.full_name}</Text>
+        <Text style={{ fontSize: 18, marginBottom: 10 }}>Email: {user.email}</Text>
+        <Text style={{ fontSize: 18 }}>Points: {user.points}</Text>
       </View>
     </ScrollView>
   );

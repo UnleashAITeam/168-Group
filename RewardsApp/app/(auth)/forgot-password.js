@@ -3,7 +3,7 @@ import { View, Text, TextInput, Alert } from 'react-native';
 import { Link } from 'expo-router';
 import { Button } from '../../components/common/Button';
 import { useAuth } from '../../hooks/useAuth';
-import { COLORS } from '../../constants/colors';
+import { COLORS } from '../../constants/Colors';
 
 export default function ForgotPassword() {
   const [email, setEmail] = useState('');

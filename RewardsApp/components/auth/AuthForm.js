@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, TextInput } from 'react-native';
 import { Button } from '../common/Button';
-import { COLORS } from '../../constants/colors';
+import { COLORS } from '../../constants/Colors';
 
 export function AuthForm({ onSubmit, submitButtonText, fields }) {
   const [formData, setFormData] = useState({});

@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Card } from '../common/Card';
-import { COLORS } from '../../constants/colors';
+import { COLORS } from '../../constants/Colors';
 
 export function BusinessCard({ business }) {
   const router = useRouter();

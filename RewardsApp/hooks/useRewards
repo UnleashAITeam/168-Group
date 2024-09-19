@@ -1,0 +1,12 @@
+import { useState, useEffect } from 'react';
+
+export function useRewards() {
+  // Implement your hook logic here
+  const [rewards, setRewards] = useState([]);
+
+  useEffect(() => {
+    // Fetch rewards data
+  }, []);
+
+  return rewards;
+}

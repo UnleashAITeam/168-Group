@@ -4,7 +4,7 @@ import { Link } from 'expo-router';
 import { AuthForm } from '../../components/auth/AuthForm';
 import { SocialLoginButtons } from '../../components/auth/SocialLoginButtons';
 import { useAuth } from '../../hooks/useAuth';
-import { COLORS } from '../../constants/colors';
+import { COLORS } from '../../constants/Colors';
 
 export default function Signup() {
   const { signup } = useAuth();

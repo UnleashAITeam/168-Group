@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, FlatList, TextInput } from 'react-native';
 import { BusinessCard } from '../../components/businesses/BusinessCard';
 import { useBusinesses } from '../../hooks/useBusinesses';
-import { COLORS } from '../../constants/colors';
+import { COLORS } from '../../constants/Colors';
 
 export default function BusinessesScreen() {
   const { businesses } = useBusinesses();

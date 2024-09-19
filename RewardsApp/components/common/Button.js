@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Text } from 'react-native';
-import { COLORS } from '../../constants/colors';
+import { COLORS } from '../../constants/Colors';
 
 export function Button({ onPress, title, variant = 'primary', className = '' }) {
   const baseStyle = 'py-2 px-4 rounded-md';
