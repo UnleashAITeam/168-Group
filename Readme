@@ -1,0 +1,7 @@
+View on mobile: (Will need to install expo go app on mobile device)
+
+CD into RewardsApp folder
+
+npm install
+
+npx expo start
