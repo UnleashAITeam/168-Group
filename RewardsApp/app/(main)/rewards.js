@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, ScrollView, FlatList } from 'react-native';
 import { Link } from 'expo-router';
+import { Colors } from '../../constants/colors';
 
 const dummyRewards = [
   { id: '1', name: 'Free Coffee', description: 'Get a free coffee', pointsCost: 100 },
@@ -19,14 +20,14 @@ function RewardItem({ reward }) {
 
 export default function RewardsScreen() {
   return (
-    <ScrollView style={{ flex: 1 }}>
+    <ScrollView style={{ flex: 1, backgroundColor: Colors.PRIMARY }}>
       <View style={{ padding: 20, alignItems: 'center' }}>
         <Image
           source={require('../../assets/images/logo.png')}
           style={{ width: 150, height: 150, marginBottom: 20 }}
           resizeMode="contain"
         />
-        <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 20 }}>168Group Rewards</Text>
+        <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 20, color: Colors.SECONDARY }}>168Group Rewards</Text>
         
         <Link href="/(main)/qr-code" asChild>
           <TouchableOpacity style={styles.button}>
@@ -69,14 +70,14 @@ export default function RewardsScreen() {
 
 const styles = {
   button: {
-    backgroundColor: '#007AFF',
+    backgroundColor: Colors.SECONDARY,
     padding: 10,
     borderRadius: 5,
     marginBottom: 10,
     width: '100%',
   },
   buttonText: {
-    color: 'white',
+    color: Colors.PRIMARY,
     textAlign: 'center',
     fontSize: 16,
   },
